@@ -13,6 +13,7 @@ public class PayType {
     @PrimaryKey(AssignType.BY_MYSELF)
     private String id;
     private String name;
+    private int type;//1默认不可删除 0添加；
 
     public String getId() {
         return id;
@@ -28,5 +29,13 @@ public class PayType {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
     }
 }
