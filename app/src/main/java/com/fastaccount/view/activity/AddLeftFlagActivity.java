@@ -3,15 +3,13 @@ package com.fastaccount.view.activity;
 import com.fastaccount.R;
 
 /**
- * Created by xus on 2017/10/12.
- * 支付方式选择和展示页
- * 默认添加 微信 支付宝 现金
+ * Created by xus on 2017/10/13.
  */
 
-public class PayFlagActivity extends BaseActivity {
+public class AddLeftFlagActivity extends BaseActivity {
     @Override
     public int setLayoutId() {
-        return R.layout.pay_flag_activity;
+        return R.layout.main_content_fragment;
     }
 
     @Override
@@ -21,6 +19,6 @@ public class PayFlagActivity extends BaseActivity {
 
     @Override
     public void initData() {
-
+        setTitle("添加消费");
     }
 }
