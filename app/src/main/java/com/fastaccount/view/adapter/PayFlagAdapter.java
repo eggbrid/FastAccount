@@ -1,9 +1,14 @@
 package com.fastaccount.view.adapter;
 
+import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
+import com.fastaccount.R;
+import com.fastaccount.model.LeftType;
 import com.fastaccount.model.PayType;
 import com.zhy.view.flowlayout.FlowLayout;
 import com.zhy.view.flowlayout.TagAdapter;
@@ -16,17 +21,21 @@ import java.util.List;
 
 public class PayFlagAdapter extends TagAdapter<PayType> {
 
+    private Context context;
 
-    public PayFlagAdapter(List<PayType> datas) {
+    public PayFlagAdapter(Context context,List<PayType> datas) {
         super(datas);
+        this.context=context;
+
     }
 
-    public PayFlagAdapter(PayType[] datas) {
-        super(datas);
-    }
 
     @Override
     public View getView(FlowLayout parent, int position, PayType payType) {
-        return null;
+        View v =  LayoutInflater.from(context).inflate(R.layout.item_tag,
+                parent, false);
+        TextView textView=v.findViewById(R.id.text);
+        textView.setText(payType.getName());
+        return v;
     }
 }

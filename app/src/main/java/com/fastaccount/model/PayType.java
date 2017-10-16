@@ -10,16 +10,16 @@ import com.litesuits.orm.db.enums.AssignType;
  */
 @Table("tb_pay_type")
 public class PayType {
-    @PrimaryKey(AssignType.BY_MYSELF)
-    private String id;
+    @PrimaryKey(AssignType.AUTO_INCREMENT)
+    private long id;
     private String name;
     private int type;//1默认不可删除 0添加；
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 

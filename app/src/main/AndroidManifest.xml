@@ -19,6 +19,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".view.activity.AddLeftFlagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.AddPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.PayFlagActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.AddPayFlagActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.activity.LeftFlagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+
+
     </application>
 
 </manifest>

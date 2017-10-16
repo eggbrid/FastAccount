@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="本日情况\n本日消费多少钱\n
+            最近的一笔消费(点击进入消费列表)" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/mouth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="本月情况\n本月收入剩余多少钱\n
+            最近的一笔消费(点击进入消费列表)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/left_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="扇形分析图" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/pay_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="折线图" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
