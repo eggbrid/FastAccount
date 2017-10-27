@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.fastaccount.R;
 import com.fastaccount.util.IntentUtil;
+import com.fastaccount.view.activity.AccountListActivity;
 import com.fastaccount.view.activity.AddLeftFlagActivity;
 import com.fastaccount.view.activity.LeftFlagActivity;
 import com.fastaccount.view.activity.PayFlagActivity;
@@ -48,6 +49,8 @@ public class MainLeftFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.mouth) {
+
+            IntentUtil.openActivity(getActivity(), AccountListActivity.class);
 
         } else if (view.getId() == R.id.left_type) {
             IntentUtil.openActivity(getActivity(), LeftFlagActivity.class);

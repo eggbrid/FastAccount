@@ -40,6 +40,10 @@
             android:name=".view.activity.SettingActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".view.activity.AccountListActivity"
+            android:screenOrientation="portrait" />
+
 
     </application>
 
